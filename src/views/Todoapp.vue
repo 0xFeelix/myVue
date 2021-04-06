@@ -1,5 +1,5 @@
 <template>
-  <div id="todoapp">
+  <div class="todoapp">
     <div class="card">
       <h1 :style="{ color: inputValue.length < 5 ? 'white' : '#FFC22B' }">
         {{ title }}
@@ -92,15 +92,17 @@ export default {
 
 
 <style>
-#todoapp {
+.todoapp {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  background: rgba(48, 68, 87, .2);
 }
 .card {
-  background: #304457 !important;
+  background: #1D2935 !important;
   border: none !important;
-  margin-bottom: 50px;
   padding: 20px;
   width: 300px;
 }
