@@ -9,6 +9,14 @@
         <router-link class="nav-link" to="/">Home</router-link>
         <router-link class="nav-link" to="/about">About</router-link>
         <router-link class="nav-link" to="/blog">Blog</router-link>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Works</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <router-link class="dropdown-item" to="/todoapp">Todo app</router-link>
+          </div>
+        </li>  
+
       </div>
     </div>
   </nav>
@@ -26,8 +34,19 @@ export default {
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+#nav{
+  background:  #304457 !important;
+  border-radius: 5px;
+}
 .collapse{
   display: flex;
   justify-content: flex-end;
 }
+
+@media screen and (max-width: 900px) {
+  .collapse{
+    justify-content: flex-start;
+  }
+}
+
 </style>
