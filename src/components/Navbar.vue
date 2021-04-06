@@ -1,7 +1,15 @@
 <template>
   <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -11,42 +19,66 @@
         <router-link class="nav-link" to="/blog">Blog</router-link>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Works</a>
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Works</a
+          >
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <router-link class="dropdown-item" to="/todoapp">Todo app</router-link>
+            <router-link class="dropdown-item" to="/todoapp"
+              >Todo app</router-link
+            >
           </div>
-        </li>  
-
+        </li>
       </div>
     </div>
   </nav>
 </template>
 
 <script>
-
-export default {
-  
-  
-}
+export default {};
 </script>
 
 <style>
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #42b983 !important;
 }
-#nav{
-  background:  #304457 !important;
+#nav {
+  background: #304457 !important;
   border-radius: 5px;
 }
-.collapse{
+.collapse {
   display: flex;
   justify-content: flex-end;
 }
-
-@media screen and (max-width: 900px) {
-  .collapse{
+.dropdown-menu {
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  text-align: center !important;
+}
+.dropdown-menu a {
+  color: #709bab !important;
+  margin-bottom: 2px;
+  border: 1px dotted #1d2935 !important;
+  border-radius: 5px;
+  background: #304457 !important;
+}
+.dropdown-menu a:hover {
+  background: #304457 !important;
+  color: #fff !important;
+}
+@media screen and (max-width: 991px) {
+  .collapse {
     justify-content: flex-start;
   }
+  .dropdown-menu a {
+    background: #1d2935 !important;
+  }
 }
-
 </style>
