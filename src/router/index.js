@@ -19,9 +19,44 @@ const routes = [
   },
   {
     path: '/todoapp',
-    name: 'Works',
+    name: 'TodoApp',
     component: () => import('../views/Todoapp.vue')
-  }
+  },
+  {
+    path: '/null1',
+    name: 'Resources',
+    component: () => import('../views/Null1.vue')
+  },
+  {
+    path: '/null2',
+    name: 'Node.js',
+    component: () => import('../views/Null2.vue')
+  },
+  {
+    path: '/null3',
+    name: 'Svelte',
+    component: () => import('../views/Null3.vue')
+  },
+  {
+    path: '/null4',
+    name: 'Ionic',
+    component: () => import('../views/Null4.vue')
+  },
+  {
+    path: '/null5',
+    name: 'Polymer',
+    component: () => import('../views/Null5.vue')
+  },
+  {
+    path: '/null6',
+    name: 'Flow',
+    component: () => import('../views/Null6.vue')
+  },
+  {
+    path: '/null7',
+    name: 'Electron',
+    component: () => import('../views/Null7.vue')
+  },
 ]
 
 const router = createRouter({

@@ -50,8 +50,15 @@
         <router-link class="nav-link home" to="/">Home</router-link>
         <router-link class="nav-link about" to="/about">About</router-link>
         <router-link class="nav-link blog" to="/blog">Blog</router-link>
-
-        <!-- <li class="nav-item dropdown">
+        <router-link class="dropdown-item mobile-hidden" to="/todoapp">Todo app</router-link>
+        <router-link class="dropdown-item mobile-hidden" to="/null1">Resources</router-link>
+        <router-link class="dropdown-item mobile-hidden" to="/null2">Node.js</router-link>
+        <router-link class="dropdown-item mobile-hidden" to="/null3">Svelte</router-link>
+        <router-link class="dropdown-item mobile-hidden" to="/null4">Ionic</router-link>
+        <router-link class="dropdown-item mobile-hidden" to="/null5">Polymer</router-link>
+        <router-link class="dropdown-item mobile-hidden" to="/null6">Flow</router-link>
+        <router-link class="dropdown-item mobile-hidden" to="/null7">Electron</router-link>
+        <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -66,8 +73,15 @@
             <router-link class="dropdown-item" to="/todoapp"
               >Todo app</router-link
             >
+            <router-link class="dropdown-item" to="/null1">Resources</router-link>
+            <router-link class="dropdown-item" to="/null2">Node.js</router-link>
+            <router-link class="dropdown-item" to="/null3">Svelte</router-link>
+            <router-link class="dropdown-item" to="/null4">Ionic</router-link>
+            <router-link class="dropdown-item" to="/null5">Polymer</router-link>
+            <router-link class="dropdown-item" to="/null6">Flow</router-link>
+            <router-link class="dropdown-item" to="/null7">Electron</router-link>
           </div>
-        </li> -->
+        </li>
       </div>
     </div>
   </nav>
@@ -107,10 +121,24 @@ export default {};
   border: none;
 }
 
+#nav .dropdown-menu {
+  background: linear-gradient(to right, #302e24, #28313e);
+  padding: 0;
+}
+#nav .dropdown-menu a {
+  padding: 10px 15px;
+}
+#nav .dropdown-menu a:hover {
+  background: #2a2a24;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 991px) {
   #nav a.router-link-exact-active {
     background: rgba(0, 0, 0, 0.1);
+  }
+  #nav .dropdown {
+    display: none;
   }
   #nav {
     text-align: center;
@@ -144,9 +172,12 @@ export default {};
     transform: translateY(10px) rotate(-5deg) scale(1.2);
     animation: psychedelic 15s infinite;
   }
-  .alligator-logo{
+  .alligator-logo {
     transition: transform 0.1s cubic-bezier(0, 1.8, 1, 1.8);
     transform: translateY(0.7em);
+  }
+  #nav .mobile-hidden {
+    display: none;
   }
   @keyframes psychedelic {
     0% {

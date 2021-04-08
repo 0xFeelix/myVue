@@ -31,6 +31,10 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
 
+:root{
+  --mainBG: #191C23;
+}
+
 body {
   font-family: "New Tegomin" !important;
   background: #21272f !important;

@@ -97,11 +97,9 @@ export default {
   justify-content: center;
   margin-top: 10px;
   padding: 20px;
-  border-radius: 5px;
-  background: rgba(48, 68, 87, .2);
 }
 #todoApp .card {
-  background: #1D2935;
+  background: var(--mainBG);
   border: none;
   padding: 20px;
   width: 300px;
