@@ -50,14 +50,30 @@
         <router-link class="nav-link home" to="/">Home</router-link>
         <router-link class="nav-link about" to="/about">About</router-link>
         <router-link class="nav-link blog" to="/blog">Blog</router-link>
-        <router-link class="dropdown-item mobile-hidden" to="/todoapp">Todo app</router-link>
-        <router-link class="dropdown-item mobile-hidden" to="/null1">Resources</router-link>
-        <router-link class="dropdown-item mobile-hidden" to="/null2">Node.js</router-link>
-        <router-link class="dropdown-item mobile-hidden" to="/null3">Svelte</router-link>
-        <router-link class="dropdown-item mobile-hidden" to="/null4">Ionic</router-link>
-        <router-link class="dropdown-item mobile-hidden" to="/null5">Polymer</router-link>
-        <router-link class="dropdown-item mobile-hidden" to="/null6">Flow</router-link>
-        <router-link class="dropdown-item mobile-hidden" to="/null7">Electron</router-link>
+        <router-link class="dropdown-item mobile-hidden" to="/todoapp"
+          >Todo app</router-link
+        >
+        <router-link class="dropdown-item mobile-hidden" to="/null1"
+          >Resources</router-link
+        >
+        <router-link class="dropdown-item mobile-hidden" to="/null2"
+          >Node.js</router-link
+        >
+        <router-link class="dropdown-item mobile-hidden" to="/null3"
+          >Svelte</router-link
+        >
+        <router-link class="dropdown-item mobile-hidden" to="/null4"
+          >Ionic</router-link
+        >
+        <router-link class="dropdown-item mobile-hidden" to="/null5"
+          >Polymer</router-link
+        >
+        <router-link class="dropdown-item mobile-hidden" to="/null6"
+          >Flow</router-link
+        >
+        <router-link class="dropdown-item mobile-hidden" to="/null7"
+          >Electron</router-link
+        >
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
@@ -73,13 +89,17 @@
             <router-link class="dropdown-item" to="/todoapp"
               >Todo app</router-link
             >
-            <router-link class="dropdown-item" to="/null1">Resources</router-link>
+            <router-link class="dropdown-item" to="/null1"
+              >Resources</router-link
+            >
             <router-link class="dropdown-item" to="/null2">Node.js</router-link>
             <router-link class="dropdown-item" to="/null3">Svelte</router-link>
             <router-link class="dropdown-item" to="/null4">Ionic</router-link>
             <router-link class="dropdown-item" to="/null5">Polymer</router-link>
             <router-link class="dropdown-item" to="/null6">Flow</router-link>
-            <router-link class="dropdown-item" to="/null7">Electron</router-link>
+            <router-link class="dropdown-item" to="/null7"
+              >Electron</router-link
+            >
           </div>
         </li>
       </div>
@@ -164,7 +184,7 @@ export default {};
   }
   .navbar-brand img {
     position: absolute;
-    top: 5px;
+    top: 0;
     left: 20px;
     width: 80px;
   }
