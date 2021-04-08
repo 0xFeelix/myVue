@@ -88,6 +88,7 @@ export default {};
   position: relative;
   background: linear-gradient(to right, #302e24, #28313e) !important;
   padding: 0 20px;
+  z-index: 2;
 }
 #nav a {
   color: #fff;
