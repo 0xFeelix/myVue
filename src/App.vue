@@ -45,6 +45,6 @@ body {
   width: 100%;
 }
 .main-content {
-  margin-top: 20vh;
+  margin-top: 25vh;
 }
 </style>
