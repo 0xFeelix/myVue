@@ -1,6 +1,6 @@
 <template>
+  <Navbar />
   <div class="container text-light">
-    <Navbar />
     <router-view />
   </div>
 </template>
@@ -20,8 +20,9 @@ export default {
 
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 body {
-  background: #1d2935 !important;
-  padding: 20px;
+  font-family:  'New Tegomin' !important;
+  background: #21272F !important;
 }
 </style>
