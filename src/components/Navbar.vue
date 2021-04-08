@@ -184,7 +184,7 @@ export default {};
   }
   .navbar-brand img {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 20px;
     width: 80px;
   }
