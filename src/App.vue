@@ -23,14 +23,13 @@ export default {
 
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 :root{
   --mainBG: #191C23;
 }
 
 body {
-  font-family: "New Tegomin" !important;
+  font-family: "Ubuntu Mono" !important;
   background: #21272f !important;
 }
 

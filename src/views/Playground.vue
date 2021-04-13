@@ -8,20 +8,22 @@
     </button>
     <hr />
     <!-- Increase & Decrease -->
-    <h3>increase decrease</h3>
-    <h3>{{ age }}</h3>
-    <button @click="age++" class="btn btn-success">+</button>
-    <button @click="age--" class="btn btn-danger">-</button>
+    <h5>increase decrease:</h5>
+    <span class="ml-1">{{ age }}</span>
+    <p>
+      <button @click="age++" class="btn btn-success">+</button>
+      <button @click="age--" class="btn btn-danger">-</button>
+    </p>
     <hr />
     <!-- Mousemove offset X&Y -->
-    <h3>Mousemove offsets</h3>
+    <h5>Mousemove offsets:</h5>
     <div @mousemove="mouseTest($event)" class="block">
       <span>x: {{ x }}</span>
       <span>y: {{ y }}</span>
     </div>
     <hr />
     <!-- Book generator JSON -->
-    <h3>Generated books</h3>
+    <h5>Generated books:</h5>
     <ul class="books row">
       <li
         v-for="book in books"
@@ -85,7 +87,7 @@ export default {
     return {
       pagetitle: "PlayGround",
       defTitle: "PlayGround",
-      age: "10",
+      age: "0",
       x: 0,
       y: 0,
       books: [
