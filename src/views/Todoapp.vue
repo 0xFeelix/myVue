@@ -54,6 +54,7 @@
 
       <div v-else>No notes yet</div>
     </div>
+    
   </div>
 </template>
 
