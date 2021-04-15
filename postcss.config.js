@@ -7,9 +7,3 @@ module.exports = {
     })
   ]
 }
-
-postcss([
-  purgecss({
-    content: ['./src/**/*.html']
-  })
-])
