@@ -19,7 +19,29 @@ export default {
 };
 </script>
 
+<style>
+  /* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
+/* Some variables */
+:root{
+  --mainBG: #191C23;
+}
+
+/* Global styles */
+body {
+  font-family: "Ubuntu Mono" !important;
+  background: #21272f !important;
+}
+
+.container-fluid{
+  padding: 0 !important;
+}
+
+.cat-head {
+  margin-top: 25vh !important;
+}
+</style>
 
 
 
