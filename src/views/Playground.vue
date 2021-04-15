@@ -28,7 +28,11 @@
       <li
         v-for="book in books"
         :key="book.id"
-        class="col-sm-6 col-md-4 col-lg-3 mb-4"
+        @click="toggleFav(book)"
+        :class="{
+          'col-sm-6 col-md-4 col-lg-3 mb-4': true,
+          favBook: book.isFav,
+        }"
       >
         <div class="card text-white bg-dark h-100" style="max-width: 18rem">
           <div class="card-header">{{ book.title }}</div>
@@ -77,6 +81,46 @@
         </div>
       </li>
     </ul>
+    <hr />
+    <!-- Input manipulation -->
+    <h5>Input manipulation $refs</h5>
+    <div class="input-group mb-3">
+      <button
+        @click="inputClick()"
+        class="btn btn-outline-danger"
+        type="button"
+        id="button-addon1"
+      >
+        Button
+      </button>
+      <input
+        ref="name"
+        type="text"
+        class="form-control"
+        placeholder=""
+        aria-label="Example text with button addon"
+        aria-describedby="button-addon1"
+      />
+    </div>
+    <hr />
+    <!-- Fetching data from Db.json -->
+    <h5>Working with Db.json</h5>
+    <ul class="cards row">
+      <li v-for="job in jobs" :key="job.id"  class="mb-3 col-sm-6 col-md-4 col-lg-3">
+        <div
+          class="card text-white bg-dark"
+          style="max-width: 18rem"
+        >
+          <div class="card-header">{{ job.title }}</div>
+          <div class="card-body">
+            <h5 class="card-title">id: {{ job.id }}</h5>
+            <p class="card-text">
+              {{ job.details }}
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -99,6 +143,7 @@ export default {
           year: "1958",
           image: require("../assets/images/things-fall-apart.jpg"),
           link: "https://en.wikipedia.org/wiki/Things_Fall_Apart",
+          isFav: true, //Add classes depending on true or false
         },
         {
           title: "Fairy tales",
@@ -109,6 +154,7 @@ export default {
           image: require("../assets/images/fairy-tales.jpg"),
           link:
             "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection",
+          isFav: false,
         },
         {
           title: "The Divine Comedy",
@@ -118,6 +164,7 @@ export default {
           year: "1315",
           image: require("../assets/images/the-divine-comedy.jpg"),
           link: "https://en.wikipedia.org/wiki/Divine_Comedy",
+          isFav: true,
         },
         {
           title: "The Unnamable",
@@ -127,10 +174,19 @@ export default {
           year: "1951",
           image: require("../assets/images/molloy-malone-dies-the-unnamable.jpg"),
           link: "https://en.wikipedia.org/wiki/Molloy_(novel)",
+          isFav: false,
         },
       ],
+      // Fetching data from Db.json & mounted
+      jobs: [],
     };
   },
+  mounted() {//fetching
+    fetch("https://my-json-server.typicode.com/0xFeelix/db/jobs")
+      .then((res) => res.json())
+      .then((data) => (this.jobs = data));
+  },
+
   methods: {
     changeTitle() {
       this.pagetitle = "My page";
@@ -142,13 +198,22 @@ export default {
       this.x = e.offsetX;
       this.y = e.offsetY;
     },
+    toggleFav(book) {
+      book.isFav = !book.isFav;
+    },
+    inputClick() {
+      const inputRefs = this.$refs.name;
+      inputRefs.placeholder = "Added placeholder with click & focused on input"; //Add placeholder
+      inputRefs.classList.add("RefClass"); //Add class
+      inputRefs.focus(); //Focus on input
+    },
   },
 };
 </script>
 
 
 
-<style>
+<style scoped>
 .btn {
   margin: 0 5px;
 }
@@ -184,6 +249,13 @@ ul {
   padding: 0;
 }
 
+.favBook .card-header {
+  color: var(--warning);
+}
+.favBook .card-title {
+  color: var(--primary);
+}
+
 .card-img-top {
   height: 40vh;
   object-fit: cover;
@@ -193,3 +265,5 @@ ul {
   list-style: none;
 }
 </style>
+
+

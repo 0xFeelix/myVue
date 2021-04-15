@@ -9,7 +9,7 @@
     </css-doodle>
 </template>
 
-<style>
+<style scoped>
 .doodle {
   position: absolute;
   z-index: 1;

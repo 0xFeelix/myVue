@@ -62,7 +62,7 @@ export default {};
 
 
 
-<style>
+<style scoped>
 #nav a.router-link-exact-active {
   background: #2a2a24;
 }

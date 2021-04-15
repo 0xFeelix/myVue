@@ -5,6 +5,7 @@ import router from './router'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min'
 import 'css-doodle/css-doodle.min'
+import './assets/global.css'
 
 
 

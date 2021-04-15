@@ -13,6 +13,7 @@
     "css-doodle": "^0.15.3",
     "gridsome": "^0.7.23",
     "jquery": "^3.6.0",
+    "json-server": "^0.16.3",
     "popper.js": "^1.16.1",
     "sass-loader": "^11.0.1",
     "vue": "^3.0.0",

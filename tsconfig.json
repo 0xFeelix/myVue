@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    // this enables stricter inference for data properties on `this`
-    "strict": true,
-    "jsx": "preserve",
-    "moduleResolution": "node"
-  }
+
+    "allowJs": false,
+    "noEmit": true // Do not compile the JS (or TS) files in this project on build
+
+  },
+  "compileOnSave": false,
+  "exclude": [ "src", "wwwroot" ],
+  "include": [ "file.ts" ]
 }

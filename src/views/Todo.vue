@@ -92,7 +92,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 #todoApp {
   display: flex;
   justify-content: center;
