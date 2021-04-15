@@ -141,7 +141,7 @@ export default {
           text:
             "Some quick example text to build on the card title and make up the bulk of the card",
           year: "1958",
-          image: require("../assets/images/things-fall-apart.jpg"),
+          image: require("../assets/images/things-fall-apart.webp"),
           link: "https://en.wikipedia.org/wiki/Things_Fall_Apart",
           isFav: true, //Add classes depending on true or false
         },
@@ -151,7 +151,7 @@ export default {
           text:
             "Some quick example text to build on the card title and make up the bulk of the card",
           year: "1835",
-          image: require("../assets/images/fairy-tales.jpg"),
+          image: require("../assets/images/fairy-tales.webp"),
           link:
             "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection",
           isFav: false,
@@ -162,7 +162,7 @@ export default {
           text:
             "Some quick example text to build on the card title and make up the bulk of the card",
           year: "1315",
-          image: require("../assets/images/the-divine-comedy.jpg"),
+          image: require("../assets/images/the-divine-comedy.webp"),
           link: "https://en.wikipedia.org/wiki/Divine_Comedy",
           isFav: true,
         },
@@ -172,7 +172,7 @@ export default {
           text:
             "Some quick example text to build on the card title and make up the bulk of the card",
           year: "1951",
-          image: require("../assets/images/molloy-malone-dies-the-unnamable.jpg"),
+          image: require("../assets/images/molloy-malone-dies-the-unnamable.webp"),
           link: "https://en.wikipedia.org/wiki/Molloy_(novel)",
           isFav: false,
         },
